@@ -1,100 +1,28 @@
-# 03 JavaScript: Password Generator
+<h1>Assignment03-Generator Password</h1>
+<p>This assignment is about generating an random password depending on the inputs from user</p>
 
-## Your Task
+<h3>Steps to get the password</h3>
+<ol>
+<li>Click on Generate password</li>
+<li>Enter how many digits of password do you want between 8 to 128 and click OK</li>
+<li>Click on OK if you want lower characters in your password and click on cancel if you dont want</li>
+<li>Click on OK if you want upper characters in your password and click on cancel if you dont want</li>
+<li>Click on OK if you want numbers in your password and click on cancel if you dont want</li>
+<li>Click on OK if you want special characters in your password and click on cancel if you dont want</li>
+<li>View the password generated in the textarea</li>
+<li>Inorder to create a new password click on Generate password button</li>
+</ol>
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+<h3>Link of Github</h3>
+<p>https://github.com/rimadas9878/Assignment03-Password-Generator</p>
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+<h3>Link of Website</h3>
+<p>https://rimadas9878.github.io/Assignment03-Password-Generator/</p>
 
-## User Story
-
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
-
-## Acceptance Criteria
-
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+<h3>Image of the prompt messages</h3>
+<img src="./Asset/Images/Ask_the_num_of_digits.png" alt="Ask_the_num_of_digits"/></br>
+<img src="./Asset/Images/Lowerchar.png" alt="Lowerchar"/></br>
+<img src="./Asset/Images/Upperchar.png" alt="Upperchar"/></br>
+<img src="./Asset/Images/Numbers.png" alt="Numbers"/></br>
+<img src="./Asset/Images/Specialchar" alt="Specialchar"/></br>
+<img src="./Asset/Images/Final password.png" alt="Final password"/>
