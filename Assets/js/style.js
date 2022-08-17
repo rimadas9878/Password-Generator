@@ -1,4 +1,6 @@
+//Initializing the passwordLength variable
 var passwordLength = 0;
+//Initializing the array variable inorder to store the concatenated value
 var optionSelectArr = [0];
 
 // Assignment Code
@@ -7,16 +9,16 @@ var generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn = addEventListener("click", writePassword)
 
-// Write password to the #password input
+// This code will display text in the textbox
 function writePassword() {
-
+  // Calling the getPromts method
   getPromts();
   var password = getPassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 
 }
-
+//The below function for the prompt messages, to collect the information and store in 'optionSelectArr' variable
 function getPromts() {
 
   var passwordParameters = {
@@ -37,7 +39,7 @@ function getPromts() {
 
   }
   else if (passwordLength < passwordParameters.minpasswordLength || passwordLength > passwordParameters.maxpasswordLength) {
-    window.alert("The number of character is less that 8 or greater than 128");
+    alert("The number of character is less that 8 or greater than 128");
     return false;
 
   }
@@ -45,28 +47,29 @@ function getPromts() {
     console.log(passwordLength);
   }
 
-  var lowercase = window.confirm("Would you like to include atleast 1 lowercase?");
+  var lowercase = confirm("Would you like to include atleast 1 lowercase?");
   if (lowercase == true) {
-
+    //Inital value of optionSelectArr is 0, Once user confirms each questions the value gets stored in optionSelectArr
+    //The concat() method creates a new array by merging (concatenating) existing arrays   
     console.log(passwordParameters.lowerChar);
     optionSelectArr = optionSelectArr.concat(passwordParameters.lowerChar);
 
   }
 
-  var uppercase = window.confirm("Would you like to include atleast 1 uppercase?");
+  var uppercase = confirm("Would you like to include atleast 1 uppercase?");
   if (uppercase == true) {
 
     console.log(passwordParameters.upperChar);
     optionSelectArr = optionSelectArr.concat(passwordParameters.upperChar);
   }
 
-  var numeric = window.confirm("Would you like to include atleast 1 numbers?");
+  var numeric = confirm("Would you like to include atleast 1 numbers?");
   if (numeric == true) {
 
     console.log(passwordParameters.number);
     optionSelectArr = optionSelectArr.concat(passwordParameters.number);
   }
-
+  // After this confirmation we have the an array of elements with lower char, upper char, num and special char
   var specialchars = window.confirm("Would you like to include atleast 1 special Character?");
   if (specialchars == true) {
 
@@ -76,12 +79,17 @@ function getPromts() {
   return true;
 }
 
+//This is the function where we use the Math.ramdom() to get the random numbers stored in optionSelectArr
 function getPassword() {
   password = " ";
   for (var i = 0; i < passwordLength; i++) {
     var randomNumber = (Math.floor(Math.random() * optionSelectArr.length));
+    //The inital value in password is 0
+    // This line will get a random number and store it in password, each time the loop is run
     password = password + optionSelectArr[randomNumber];
+    // this line is just to check the added elements in console
     console.log(password)
   }
   return password;
 }
+
