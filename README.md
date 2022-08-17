@@ -20,9 +20,4 @@
 <p>https://rimadas9878.github.io/Assignment03-Password-Generator/</p>
 
 <h3>Image of the prompt messages</h3>
-<img src="./Asset/Images/Ask_the_num_of_digits.png" alt="Ask_the_num_of_digits"/></br>
-<img src="./Asset/Images/Lowerchar.png" alt="Lowerchar"/></br>
-<img src="./Asset/Images/Upperchar.png" alt="Upperchar"/></br>
-<img src="./Asset/Images/Numbers.png" alt="Numbers"/></br>
-<img src="./Asset/Images/Specialchar" alt="Specialchar"/></br>
-<img src="./Asset/Images/Final password.png" alt="Final password"/>
+<img src="./Assets/Images/PasswordGenerated.png" alt="GeneratedPassword"/>
